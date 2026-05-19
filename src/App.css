@@ -1,0 +1,747 @@
+:root {
+    --base-color: white;
+    --text-color: black;
+    --header-color: rgb(250, 250, 250);
+    --header-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --vline-color: rgba(116, 21, 21, 0.363);
+    --hero-color: rgb(245, 246, 248);
+    --hero-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3);
+    --achievement-color: rgba(241, 241, 241, 0.87);
+    --achievement-box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.3);
+    --lvl-color:rgba(116, 21, 21, 0.363);
+    --projlist-color: rgb(71, 58, 97);
+    --projlist-box-shadow: 3px 3px 8px 0 rgba(59, 58, 58, 0.753);
+    --aboutme-color: rgb(20, 20, 20);
+    --btn-color: rgb(20, 20, 20);
+    --footer-color: #c9d7eb;
+    --h3-spacing: 1px;
+}
+
+.darkMode {
+    --base-color: black;
+    --text-color: white;
+    --header-color: rgb(68, 65, 65);
+    --header-box-shadow: 0 4px 8px 0 rgba(165, 160, 160, 0.788);
+    --vline-color: white;
+    --hero-color: rgba(94, 87, 87, 0.623);
+    --hero-box-shadow: 4px 4px 6px 0 rgba(146, 142, 142, 0.699);
+    --achievement-color: rgba(94, 87, 87, 0.623);
+    --achievement-box-shadow: 4px 4px 6px 0 rgba(177, 170, 170, 0.719);
+    --lvl-color: white;
+    --projlist-color: rgba(94, 87, 87, 0.623);
+    --projlist-box-shadow: 3px 3px 8px 0 rgba(141, 133, 133, 0.808);
+    --aboutme-color: rgba(44, 42, 42, 0.815);
+    --btn-color: rgba(94, 87, 87, 0.623);
+    --footer-color: rgba(94, 87, 87, 0.623);
+    --h3-spacing: 1px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--base-color);
+    color: var( --text-color);
+}
+
+header {
+    width: 100%;
+    min-height: 56px;
+    background-color: var(--header-color);
+    box-shadow: var(--header-box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+header > div {
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+}
+
+header > div > nav {
+    margin-right: 30px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro > h4 {
+    padding-right: 5px;
+}
+
+.intro > h5 {
+    padding: 5px 0 0 5px;
+}
+
+.v-line {
+    width: 3px;
+    height: 18px;
+    margin-right: 3px;
+    border-width: 0;
+    background-color: var(--vline-color);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul > button {
+    margin-left: 13px;
+}
+
+li {
+    list-style: none;
+    padding-left: 13px;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+    color: rgb(228, 129, 37);
+}
+
+/* li:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+} */
+
+li > a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* code for dark mode  */
+#theme-switch {
+    height: 17px;
+    width: 17px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    position: absolute;
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkMode #theme-switch svg:first-child {
+    display: none;
+}
+.darkMode #theme-switch svg:last-child {
+    display: block;
+}
+ /* ends code for dark mode  */
+
+h3 {
+    letter-spacing: var(--h3-spacing);
+}
+
+.hero {
+    min-height: 208px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero > div {
+    width: 1024px;
+    height: 208px;
+    margin-top: 160px;
+    background-color: var(--hero-color);
+    box-shadow: var(--hero-box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero > div > img {
+    bottom: -10px;
+    right: 112px;
+    position: absolute;
+}
+
+.banner {
+    margin-left: 112px;
+}
+
+.banner :nth-child(2) {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.btn-download {
+    width: 112px;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #04AA6D;
+}
+
+.btn-download > a {
+    text-decoration: none;
+    color: white;
+}
+
+h5 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.my-achievements {
+    width: 100%;
+    min-height: 80px;
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.my-achievements > hr {
+    width: 122px;
+    border: 1px solid rgba(196, 27, 27, 0.705);
+}
+
+.achievements {
+    width: 1024px;
+    height: 100%;
+    margin-top: 32px;
+    padding: 20px;
+    background-color: var(--achievement-color);
+    box-shadow: var(--achievement-box-shadow);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievements div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievements > div > div {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.achievements img {
+    width: 40px;
+    height: 40px;
+}
+
+.achievements h6 {
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.long-vl {
+    width: 3px;
+    height: 60px;
+    margin-right: 3px;
+    border-width: 0;
+    background-color: var(--vline-color);
+}
+
+.skills {
+    width: 100%;
+    min-height: 80px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills > hr {
+    width: 48px;
+    border: 1px solid rgba(196, 27, 27, 0.705);
+}
+
+.skills > div {
+    width: 1024px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills img {
+    width: 40px;
+    height: 40px;
+}
+
+.projects {
+    width: 100%;
+    min-height: 320px;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects > div {
+    width: 1024px;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects > div > hr {
+    width: 108px;
+    border: 1px solid rgba(196, 27, 27, 0.705);
+}
+
+.proj-lists {
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.proj-lists > div {
+    height: 230px;
+    width: 330px;
+    padding: 15px;
+    font-family: 'Calibri';
+    color: rgb(241, 247, 245);
+    background-color: var(--projlist-color);
+    box-shadow: var(--projlist-box-shadow);
+    position: relative;
+}
+
+.note {
+    top: 110px;
+    left: 30px;
+    font-size: large;
+    color: rgba(255, 0, 0, 0.87);
+    transform: rotate(-30deg);
+    position: absolute;
+}
+
+.about-me {
+    width: 100%;
+    min-height: 352px;
+    margin-top: 48px;
+    color: rgb(241, 247, 245);
+    background-color: var(--aboutme-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-me > h3 {
+    color: rgb(219, 171, 35);
+}
+
+.about-me > hr {
+    width: 88px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(196, 27, 27, 0.705);
+}
+
+.info {
+    width: 1024px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+
+.info > img {
+    margin-left: 80px;
+    margin-bottom: 20px;
+    top: -70px;
+    left: 30px;
+    position: absolute;
+}
+
+.personal-info {
+    width: 60%;
+    height:100%;
+    padding-right: 80px;
+}
+
+.personal-info :nth-child(3) {
+    padding-top: 5px;
+}
+
+.contact {
+    width: 100%;
+    height: 224px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact > hr {
+    width: 68px;
+    border: 1px solid rgba(196, 27, 27, 0.705);
+}
+
+.contact-via {
+    margin-top: 24px;
+}
+
+.contact-via > div {
+    width: 224px;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-via img {
+    width: 24px;
+    height: 24px;
+}
+
+.or {
+    width: 30px !important;
+    height: 30px !important;
+    color: black;
+    background-color: rgba(221, 216, 216, 0.918);
+    border-radius: 50px;
+    font-size: 11px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-via > button {
+    width: 160px !important;
+    height: 32px !important;
+    padding: 8px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: rgb(241, 247, 245);
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-via > button > a {
+    color: rgb(241, 247, 245);
+    text-decoration: none;
+}
+
+.email > img {
+    height: 24px !important;
+    width: 24px !important;
+}
+
+.footer {
+    width: 100%;
+    height: 64px;
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* for mobile menu  */
+.list-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* style mobile menu  */
+.open .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+/* position mobile menu  */
+.mobile-menu {
+    display: none;
+    width: 130px;
+    height: 230px;
+    background-color: var(--header-color);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    top: 56px;
+    right: 0;
+    position: absolute;
+}
+/* ends for mobile menu  */
+
+/* for scroll to top  */
+#btn-top {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  z-index: 100;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: rgba(235, 10, 10, 0.863);
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#btn-top:hover {
+  background-color: #a8a2a2;
+}
+/* ends for scroll to top  */
+
+@media(max-width: 992px) {
+
+    .header > div {
+        width: 90%;
+    }
+
+    .hero > div {
+        width: 90%;
+    }
+
+    .achievements {
+        width: 90%;
+    }
+
+    .skills > div {
+        width: 90%;
+    }
+
+    .projects {
+        min-height: 600px;
+        margin-top: 30px;
+    }
+
+    .projects > div {
+    width: 90%;
+    justify-content: center;
+    }
+
+    .proj-lists {
+        width: 100%;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .proj-lists > div {
+        width: 365px;
+        height: 220px;
+    }
+
+    .note {
+        top: 100px;
+        left: 50px;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
+
+@media(max-width: 550px) {
+
+    header {
+        max-width: 550px;
+        min-height: 56px;
+    }
+
+    header > div {
+        height: 100%;
+        margin: 0 10px;
+    }
+
+    /* for dark mode  */
+    #theme-switch {
+        right: 30px;
+    }
+
+    /* for mobile responsive  */
+    header nav {
+        display: none;
+    }
+
+    .list-icon {
+        display: block;
+    }
+    /* ends for mobile responsive  */
+    
+    .hero {
+        width: 100%;
+        min-height: 550px;
+        margin-top: 20px;
+    }
+
+    .hero > div {
+        width: 90%;
+        height: 350px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items:end;
+        justify-content: center;
+        position: relative;
+    }
+
+    .hero img {
+        top: -100px;
+        left: 80px;
+        position: absolute;
+    }
+
+    .banner {
+        margin-left: 0;
+    }
+
+    .my-achievements {
+        min-height: 320px;
+        margin-top: 40px;
+    }
+
+    .achievements {
+        width: 60%;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .long-vl {
+        transform: rotate(90deg);
+        width: 0;
+        height: 0;
+        margin-right: 0;
+        border-width: 0;
+        background-color: none;
+        display: none;
+    }
+    
+    .skills {
+        max-width: 550px;
+        height: 100px;
+        margin-top: 50px;
+    }
+
+    .skills > div {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    
+    .projects {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects > div {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .proj-lists {
+        width: 100%;
+        height: auto;
+    }
+         
+    .proj-lists > div {
+        height: 250px; 
+        width: 300px;
+    }
+
+    .note {
+        top: 120px;
+        left: 20px;
+    }
+
+    .about-me {
+        min-height: 650px;
+    }
+
+    .info {
+        width: 100%;
+        height: 350px;
+        margin-top: 200px;
+    }
+
+    .info > img {
+        top: -220px;
+        left: 5px;
+    }
+
+    .personal-info {
+        width: 100%;
+        height: 100%;
+        padding: 300px 50px 500px 50px;
+    }
+
+    #btn-top {
+        right: 15px;
+        padding: 3px;
+    }
+}
+
