@@ -3,11 +3,12 @@ import instagram from '../assets/instagram.png';
 import linkedin from '../assets/linkedin.png';
 import x from '../assets/x.png';
 import youtube from '../assets/youtube.png';
+import { Title } from './Title';
 
 export const Contact = () => {
   return (
     <section id="contact" className="contact">
-      <h3>Contact</h3>
+      <Title title="Contact"/>
       <hr />
       <div className="contact-via">
         <div>

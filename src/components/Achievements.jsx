@@ -1,3 +1,5 @@
+import { Title } from './Title';
+
 import graduation from '../assets/graduation.png';
 import project from '../assets/project.png';
 import experience from '../assets/experience.png';
@@ -5,7 +7,7 @@ import experience from '../assets/experience.png';
 export const Achievements = () => {
   return (
     <section className="my-achievements">
-      <h3>Achievements</h3>
+      <Title title="Achievements"/>
       <hr />
       <div className="achievements">
         <div>

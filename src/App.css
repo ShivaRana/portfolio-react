@@ -43,6 +43,7 @@ html {
 * {
     margin: 0;
     box-sizing: border-box;
+    /* border-inline: none !important; */
 }
 
 body {
@@ -348,7 +349,7 @@ p {
 }
 
 .proj-lists > div {
-    height: 230px;
+    height: 300px;
     width: 330px;
     padding: 15px;
     font-family: 'Calibri';
@@ -587,7 +588,7 @@ p {
 
     .proj-lists > div {
         width: 365px;
-        height: 220px;
+        height: 240px;
     }
 
     .note {

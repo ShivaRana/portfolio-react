@@ -1,8 +1,10 @@
+import { Title } from "./Title";
+
 export const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div>
-        <h3>My Projects</h3>
+        <Title title="My Projects"/>
         <hr />
         <div className="proj-lists">
           <div>

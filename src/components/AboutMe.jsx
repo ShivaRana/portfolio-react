@@ -1,9 +1,11 @@
+import { Title } from './Title';
+
 import shiva from '../assets/shiva.png';
 
 export const AboutMe = () => {
   return (
     <section id="about" className="about-me">
-      <h3>About Me</h3>
+      <Title title="About Me"/>
       <hr />
       <div className="info">
         <img src={shiva} alt="Image not available!" />
