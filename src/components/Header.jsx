@@ -19,7 +19,7 @@ export const Header = () => {
     darkMode !== 'active' ? enableDarkmode() : disableDarkMode();
   };
 
-  // --- toggle menu ---
+  // --- toggle mobile menu ---
   function toggleMobileMenu(event) {
     event.currentTarget.classList.toggle('open');
   }

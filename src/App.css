@@ -518,7 +518,7 @@ p {
     justify-content: center;
 }
 
-/* for mobile menu  */
+/* toggle mobile menu  */
 .list-icon {
     display: none;
     cursor: pointer;
@@ -544,7 +544,7 @@ p {
     right: 0;
     position: absolute;
 }
-/* ends for mobile menu  */
+/* ends toggle mobile menu  */
 
 /* for scroll to top  */
 #btn-top {
