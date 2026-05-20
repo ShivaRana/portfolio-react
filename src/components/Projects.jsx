@@ -7,7 +7,7 @@ export const Projects = () => {
         <Title title="My Projects"/>
         <hr />
         <div className="proj-lists">
-          <div class="proj-card">
+          <div className="proj-card">
             <h3>EduPro</h3>
             <p>
               It is a complete package for Schools, Colleges and Universities.
@@ -21,7 +21,7 @@ export const Projects = () => {
             </p>
             <div className="note">This is for learning purposes only.</div>
           </div>
-          <div class="proj-card">
+          <div className="proj-card">
             <h3>QuickBite</h3>
             <p>
               It is a food-ordering app. You can order your meal at anytime,
@@ -34,7 +34,7 @@ export const Projects = () => {
             </p>
             <div className="note">This is for learning purposes only.</div>
           </div>
-          <div class="proj-card">
+          <div className="proj-card">
             <h3>SmartStock</h3>
             <p>
               It is a stock (inventory) management system which helps to view

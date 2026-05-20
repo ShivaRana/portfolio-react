@@ -20,8 +20,8 @@ export const Header = () => {
   };
 
   // --- toggle menu ---
-  function toggleMobileMenu(menu) {
-    // menu.classList.toggle('open');
+  function toggleMobileMenu(event) {
+    event.currentTarget.classList.toggle('open');
   }
 
   return (
@@ -51,7 +51,7 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="list-icon" onClick={toggleMobileMenu(this)}>
+        <div className="list-icon" onClick={toggleMobileMenu}>
           <i className="bi bi-list"></i>
           <ul className="mobile-menu">
             <li>

@@ -10,37 +10,37 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 function App() {
-  // --- scroll page ---
-  let mybutton = document.getElementById('btn-top');
+  // // --- scroll page ---
+  // let mybutton = document.getElementById('btn-top');
 
-  // Button shows up when the page scrolls 20px down
-  window.onscroll = function () {
-    scrollPage();
+  // // Button shows up when the page scrolls 20px down
+  // window.onscroll = function () {
+  //   scrollPage();
 
-    function scrollPage() {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton.style.display = 'block';
-      } else {
-        mybutton.style.display = 'none';
-      }
-    }
-  };
+  //   function scrollPage() {
+  //     if (
+  //       document.body.scrollTop > 20 ||
+  //       document.documentElement.scrollTop > 20
+  //     ) {
+  //       mybutton.style.display = 'block';
+  //     } else {
+  //       mybutton.style.display = 'none';
+  //     }
+  //   }
+  // };
 
-  // Function to jump to the top of the page
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  // // Function to jump to the top of the page
+  // function topFunction() {
+  //   document.body.scrollTop = 0;
+  //   document.documentElement.scrollTop = 0;
+  // }
 
   return (
     <>
-      {/* --- button for scroll top --- */}
-      <button onClick={() => topFunction()} id="btn-top">
+      --- button for scroll top ---
+      {/* <button onClick={topFunction} id="btn-top">
         <i className="bi bi-caret-up"></i>
-      </button>
+      </button> */}
 
       <Header />
       <Hero />

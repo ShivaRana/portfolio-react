@@ -368,7 +368,7 @@ p {
 }
 
 .proj-card {
-    height: 300px;
+    height: 200px;
     width: auto;
     padding: 15px;
     font-family: 'Calibri';
@@ -379,8 +379,8 @@ p {
 }
 
 .note {
-    top: 110px;
-    left: 30px;
+    top: 90px;
+    left: 100px;
     font-size: large;
     color: rgba(255, 0, 0, 0.87);
     transform: rotate(-30deg);
@@ -728,8 +728,8 @@ p {
     }
 
     .note {
-        top: 120px;
-        left: 20px;
+        top: 100px;
+        left: 50px;
     }
 
     .about-me {
