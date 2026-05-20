@@ -46,6 +46,26 @@ html {
     /* border-inline: none !important; */
 }
 
+/* --- google fonts --- */
+.arbutus-slab-regular {
+  font-family: "Arbutus Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courgette-regular {
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.croissant-one-regular {
+  font-family: "Croissant One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* --- Ends google fonts --- */
+
 body {
     background-color: var(--base-color);
     color: var( --text-color);
@@ -342,15 +362,14 @@ p {
     width: 100%;
     height: auto;
     margin-top: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.proj-lists > div {
+.proj-card {
     height: 300px;
-    width: 330px;
+    width: auto;
     padding: 15px;
     font-family: 'Calibri';
     color: rgb(241, 247, 245);
@@ -578,17 +597,12 @@ p {
     }
 
     .proj-lists {
-        width: 100%;
-        padding-top: 20px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        gap: 2rem;
-        justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     }
 
-    .proj-lists > div {
-        width: 365px;
-        height: 240px;
+    .proj-card {
+        height: auto;
+        width: auto;
     }
 
     .note {
@@ -705,13 +719,12 @@ p {
     }
 
     .proj-lists {
-        width: 100%;
-        height: auto;
+        grid-template-columns: 1fr;
     }
-         
-    .proj-lists > div {
-        height: 250px; 
-        width: 300px;
+
+    .proj-card {
+    height: auto;
+    width: auto;
     }
 
     .note {
