@@ -5,7 +5,7 @@ import shiva from '../assets/shiva.png';
 export const AboutMe = () => {
   return (
     <section id="about" className="about-me">
-      <Title title="About Me"/>
+      <Title title="About Me" />
       <hr />
       <div className="info">
         <img src={shiva} alt="Image not available!" />
@@ -20,7 +20,7 @@ export const AboutMe = () => {
           <br />
           <h4>Interest</h4>
           <p>
-            &nbsp;&nbsp;&nbsp;Coding&nbsp;&nbsp;&nbsp;Travelling&nbsp;&nbsp;&nbsp;Cycling&nbsp;&nbsp;&nbsp;Football
+            &nbsp;&nbsp;&nbsp;Coding&nbsp;&nbsp;&nbsp;Cycling&nbsp;&nbsp;&nbsp;Travelling
           </p>
         </div>
       </div>

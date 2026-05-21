@@ -1,6 +1,6 @@
 export const Header = () => {
   // --- dark mode ---
-  let darkMode = localStorage.getItem('darkMode');
+  const darkMode = localStorage.getItem('darkMode');
 
   const enableDarkmode = () => {
     document.body.classList.add('darkMode');
@@ -15,7 +15,7 @@ export const Header = () => {
   if (darkMode === 'active') enableDarkmode();
 
   const toggleDarkMode = () => {
-    let darkMode = localStorage.getItem('darkMode');
+    const darkMode = localStorage.getItem('darkMode');
     darkMode !== 'active' ? enableDarkmode() : disableDarkMode();
   };
 
@@ -28,7 +28,7 @@ export const Header = () => {
     <header className="header">
       <div>
         <div className="intro">
-          <h4>Shiva</h4>
+          <h4 className="croissant-one-regular">SHIVA</h4>
           <hr className="v-line"></hr>
           <h5>Software Developer</h5>
         </div>
