@@ -5,9 +5,9 @@ export const ScrollToTop = () => {
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 30) {
+    if (scrolled > 50) {
       setVisible(true);
-    } else if (scrolled <= 30) {
+    } else if (scrolled <= 50) {
       setVisible(false);
     }
   };
