@@ -2,7 +2,7 @@ import { Title } from './Title';
 
 import shiva from '../assets/shiva.png';
 
-export const AboutMe = () => {
+export const About = () => {
   return (
     <section id="about" className="about-me">
       <Title title="About Me" />

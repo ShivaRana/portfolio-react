@@ -25,7 +25,7 @@ const PROJECTS = [
   },
 ];
 
-export const Project = () => {
+export const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div>

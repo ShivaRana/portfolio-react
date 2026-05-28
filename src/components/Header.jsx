@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export const Header = () => {
   // --- dark mode ---
   const darkMode = localStorage.getItem('darkMode');
@@ -35,19 +37,19 @@ export const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -55,19 +57,19 @@ export const Header = () => {
           <i className="bi bi-list"></i>
           <ul className="mobile-menu">
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
